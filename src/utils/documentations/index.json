@@ -1,0 +1,211 @@
+{
+    "user":[
+        {
+            "endpoint": "api/users",
+            "action": "register",
+            "method": "Post",
+            "request": {
+                "name": "pepito",
+                "email": "pepito@pepito.com",
+                "pasword": "Pepito123*"
+            },
+            "response": {
+                "name":"pepito",
+                "email":"pepito@pepito.com"
+            }
+    },
+    {
+        "endpoint": "api/users/login",
+        "action": "Login",
+        "method": "Post",
+        "request": {
+            "email": "pepito@pepito.com",
+            "password": "password of admins"
+        },
+        "response": "Token; (example): sadsadwsadq1ed1e12e"
+    },
+    {
+        "endpoint": "api/users/logout",
+        "action": "logout",
+        "method": "post",
+        "request": {
+            "token": ""
+        },
+        "response": {
+            "token": "null"
+        }
+
+    },
+
+    {
+        "endpoint": "api/users/:id",
+        "action" : "get user by Id",
+        "method": "get",
+        "request":{
+            "endpoint": "api/users/.id(here u need to replace the 'id' for userID"
+    },
+        "response":{
+            "name":"pepito",
+            "email": "pepito@pepito.com"
+        }
+
+    
+    }
+],
+
+"game":[
+    {
+        "endpoint": "api/game",
+        "action":"get all the games",
+        "method":"get",
+        "request":{
+            "endpoint": "api/game"
+        },
+        "response": "Lineage 2 API, maybe if we create a news game, we can see all the games"
+    },
+
+    {
+        "endpoint": "api/games/",
+        "action":"Create a new Game",
+        "method":"post",
+        "request":{
+            "name": "Lineage",
+            "img": "",
+            "characters":"",
+            "Year":"2003"
+
+    },
+        "response":{
+            "name": "Lineage",
+            "img": "",
+            "characters":"['characters by ID']",
+            "year": "2003"
+        }
+
+
+    },
+
+    {
+        "endpoint": "api/games/:id",
+        "action": "change games querys",
+        "method": "Patch",
+        "request": {
+            "query":"QueryToChange",
+            "query2":"QueryToChange"
+        },
+        "response": "querychanged"
+
+
+    },
+
+
+    {
+        "endpoint": "/api/:id",
+        "action":"Delete game(Only Admin users",
+        "method": "Delete",
+        "request":{
+            "endpoint": "/api/:id(ID of Game)"
+        },
+        "response": "The game has been deleted successfully"
+    }
+
+
+
+
+
+],
+
+"Characters": 
+
+
+[
+{
+    "endpoint": "/api/characters/",
+    "action": "get all characters",
+    "method": "get",
+    "request":{
+        "endpoint": "/api/characters/"
+    },
+    "response": "All the characters"
+
+
+},
+{
+    "endpoint": "/api/characters/:id",
+    "action":"get character by ID",
+    "method":"GET",
+    "request": {
+        "endpoint": "/api/characters/:id (You need to replace :id for characterID)"
+
+    },
+    "response": {
+        "name": "Ricardo",
+        "img": "image file"
+
+    }
+
+
+
+},  
+
+    {
+    "endpoint": "/api/characters/",
+    "action": "create a new character",
+    "method": "post",
+    "request":{
+    "name":"pepito",
+    "img": "imgFile",
+    "gender": "male or female",
+    "isAlive": "true or false"
+
+},  "response":{
+    "name": "pepito",
+    "img": "imgFileUrl",
+    "gender": "male or female",
+    "isAlive": "true or false"
+}
+
+
+
+},
+
+{
+    "enpoint": "/api/characters/:id",
+    "action": "EDIT character",
+    "method": "patch",
+    "request":{
+        "queryforchange": "querychanged"
+    },
+    "response":{
+        "querychanged": "querychanged"
+
+}
+
+
+
+},
+{
+
+    "endpoint": "/api/characters/:id",
+    "action": "Delete Character",
+    "method": "delete",
+    "request":{
+        "endpoint":"/api/characters/:id (you need character id, and add to URL at the final)"
+    },
+    "response": "character has been deleted"
+
+
+}
+
+]}
+
+
+
+
+
+
+
+
+
+
+
